@@ -5,6 +5,7 @@ import (
 	"math"
 	"strings"
 
+	"github.com/mzietara/advent-of-code/util"
 	. "github.com/mzietara/advent-of-code/util"
 )
 
@@ -181,7 +182,7 @@ func processInput(pp PuzzlePart) {
 	grid = Matrix[object]{}
 	onGrid := true
 	rowNum := 0
-	ProcessInputFile(func(line string) {
+	util.ProcessInputFile(func(i int, line string) {
 		if strings.TrimSpace(line) == "" {
 			onGrid = false
 			return
