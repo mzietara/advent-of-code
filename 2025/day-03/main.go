@@ -68,6 +68,6 @@ func banks() []string {
 
 func main() {
 	defer util.Timer()()
-	// part1()
 	solution(1)
+	solution(2)
 }
